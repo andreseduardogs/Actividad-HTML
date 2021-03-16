@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+	}
+	th, td {
+  		padding: 5px;
+  		text-align: left;    
+	}
+</style>
+	<title>Formulario de contacto</title>
+</head>
+<body>
+
+	<form action="../enviar2.php" method="POST">
+
+	<table style="width:30%">
+		<tr>
+			<th colspan="2">FORMULARIO DE CONTACTO</th>
+		</tr>
+		<tr>
+			<td><label for="from">Ingrese se nombre:</label></td>
+			<td><input type="text" name="nombre" id="from" placeholder="Digite su nombre"></td>
+		</tr>
+		<tr>
+			<td><label for="subject">Ingrese un asunto:</label></td>
+			<td><input type="text" name="email" id="subject" placeholder="Digite el asunto"></td>
+		</tr>
+		<tr>
+			<td><label for="to">Ingrese el correo de destino:</label></td>
+			<td><input type="email" name="to" id="to" placeholder="Digite el correo"></td>
+		</tr>
+		<tr>
+			<td><label for="content">Ingrese el contenido del correo</label></td>
+			<td><textarea placeholder="Digite su mensaje" name="mensaje" id="content"></textarea></td>
+		</tr>
+	</table>
+
+	<br>
+
+	<input type="submit" name="submit">
+
+	</form>
+</body>
+</html>
